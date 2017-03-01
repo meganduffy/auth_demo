@@ -29,3 +29,4 @@ class User(AbstractUser):
     # now that we've abstracted this class we can add any
     # number of custom attributes to our user class
     objects = AccountUserManager()
+    last_login = models.DateTimeField()
